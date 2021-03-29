@@ -1,0 +1,125 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+#sitename {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow:-4px 4px 3px tomato;
+}
+
+nav {
+    border: 5px tomato ridge;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    nav {
+        flex-flow: row wrap;
+    }
+}
+
+nav p{
+    padding: 5px;
+    margin: 2px;
+    border: 2px ridge tomato;
+    background-color: tomato;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav p:hover{
+    background-color: red;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+#services {
+				border: 5px ridge tomato;
+				border-bottom: 5px solid tomato;
+				border-radius: 10px 10px 0 0; 
+				margin-top: 5px;
+				margin-bottom: 0;
+}
+
+#sitebranding {
+			margin-top: 5px;
+    position: relative;
+    color: tomato;
+    font-style: italic;
+    font-size: 1em;
+}
+@media screen and (min-width: 600px) {
+				#sitebranding {
+								font-size: 1.5em;
+				}
+}
+
+#sitebrand {
+				width: 100%;
+}
+
+#taglines {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+h3, h4 {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+				.container {
+								display: grid;
+								grid-template-columns: auto auto;
+								justify-content: space-between;
+				}
+}
+
+.service {
+    margin: 20px;
+    color: tomato;
+    font-style: italic;
+}
+
+.servicePics {
+				width: 100%;
+}
+
+.heading {
+				margin-top: 0;
+				padding: 10px;
+				color: white;
+				background-color: tomato;
+				border-bottom: 2px solid tomato;
+}
+
+footer {
+				margin-top: 0;
+				background-color: tomato;
+				color: white;
+				display: flex;
+				flex-flow: column wrap;
+				text-align: center;
+}
+@media screen and (min-width: 600px){
+				footer {
+								text-align: left;
+								flex-flow: row wrap;
+				}
+}
+
+.footers {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.logo {
+				margin: 5px;
+				width: 20px;
+}
